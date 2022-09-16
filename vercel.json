@@ -5,7 +5,7 @@
             "has": [
                 {
                     "type": "host",
-                    "value": "https://auth.pki.emeraldsys.xyz"
+                    "value": "auth.pki.emeraldsys.xyz"
                 }
             ],
             "destination": "/auth/:path*"
