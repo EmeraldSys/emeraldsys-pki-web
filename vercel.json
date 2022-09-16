@@ -1,0 +1,17 @@
+{
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "https://auth.pki.emeraldsys.xyz"
+                }
+            ],
+            "destination": "/auth/:path*"
+        }
+    ],
+    "github": {
+        "silent": true
+    }
+}
