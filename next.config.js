@@ -4,7 +4,7 @@ module.exports = {
   swcMinify: true,
   rewrites: async () => {
     return {
-      beforeFiles: [
+      afterFiles: [
         {
           "source": "/:path*",
           "has": [
