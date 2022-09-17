@@ -4,7 +4,7 @@ module.exports = {
   swcMinify: true,
   rewrites: async () => {
     return {
-      afterFiles: [
+      beforeFiles: [
         {
           "source": "/:path*",
           "has": [
@@ -14,6 +14,16 @@ module.exports = {
             }
           ],
           "destination": "/auth/:path*"
+        },
+        {
+          "source": "/auth/_next/:path*",
+          "has": [
+            {
+              "type": "host",
+              "value": "auth.pki.emeraldsys.xyz"
+            }
+          ],
+          "destination": "/_next/:path*"
         }
       ]
     };
